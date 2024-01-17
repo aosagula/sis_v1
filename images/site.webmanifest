@@ -1,0 +1,13 @@
+{
+    "name": "Sistema de Información Simplificada",
+    "short_name": "SIS",
+    "start_url": "./?utm_source=web_app_manifest",
+    "display": "standalone",
+    "icons": [
+      
+    ],
+    "related_applications": [
+     
+    ]
+  }
+  

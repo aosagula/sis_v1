@@ -3,9 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>UploadiFive Test</title>
-<script src="jquery.min.js" type="text/javascript"></script>
+<!-- <script src="jquery.min.js" type="text/javascript"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha512-CwHUCK55pONjDxvPZQeuwKpxos8mPyEv9gGuWC8Vr0357J2uXg1PycGDPND9EgdokSFTG6kgSApoDj9OM22ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="jquery.uploadifive.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="uploadifive.css">
+<link rel="shortcut icon" href="#">
 <style type="text/css">
 body {
 	font: 13px Arial, Helvetica, Sans-serif;

@@ -26,9 +26,9 @@
     <!--// Meta tag Keywords -->
 
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
     <link rel="manifest" href="/images/site.webmanifest">
-
+    <link rel="shortcut icon" href="#">
     <!-- css files -->
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> Bootstrap-Core-CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
@@ -53,34 +53,14 @@
 
 <body>
 
-
-
-
-
-
-
     <nav class="navbar navbar-expand-lg navbar-light py-4">
-
-
-
-
-
-
-
     </nav>
-
-
     <section class="stats" id="stats">
         <div class="wthree-different-dot1  py-5">
             <div class="container py-3">
                 <div class="head_part">
 
                     <nav class="navbar navbar-expand-lg navbar-light py-4">
-
-
-
-
-
                     </nav>
 
                     <img src="images/logosisbco.png" width="300" /><br><br><br><br>
@@ -116,6 +96,7 @@
                     </form>
                     <script type="text/javascript">
                         document.getElementsByTagName('form')[0].onsubmit = function () {
+                            this.action = 'sis/';
                             this.action += 'patente/' + this.keys.value + '.png';
                         }
                     </script>
@@ -169,7 +150,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="row grid2">
                         <div class="col-md-3 col-sm-2 col-3 icon color1 text-center">
                             <span class="fas fa-star" aria-hidden="true"></span>
@@ -181,7 +162,7 @@
                             </a>
                         </div>
                     </div>
-                   
+
 
                     <div class="row grid2">
                         <div class="col-md-3 col-sm-2 col-3 icon color1 text-center">
@@ -194,7 +175,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
 
                 </div>
                 <br>
@@ -205,11 +186,6 @@
     </section>
     <!-- //about -->
 
-
-
-
-<!-- //contact -->
-
     <!-- footer -->
     <footer class="py-5">
         <div class="container">
@@ -218,7 +194,7 @@
                 <div class="col-lg-6 copyleft pl-0 pt-4 mt-4">
                     <p><img src="images/logobco2.png" width="500" alt="" /></p>
                 </div>
-                
+
             </div>
             <div class="col-lg-3 col-sm-6 mt-lg-0 mt-sm-5 mt-3 agileinfo_footer_grid">
                 <h3 class="mb-3"></h3>
@@ -233,11 +209,11 @@
                             href="http://www.cobertura.digital">Cobertura.Digital</a></li>
                 </ul>
             </div>
-            
-			<!-- //copyright -->
+
+            <!-- //copyright -->
 
         </div>
-        
+
     </footer>
     <!-- footer -->
 
@@ -351,9 +327,13 @@
         <!-- //flexslider --><!-- //for testimonials -->
 
         <!-- start-smoth-scrolling -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js"
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js"
             integrity="sha512-srUREbxyKz08UAtIMIy/yoihZeUN5EhzjpkWZZQWnI3pkK+s040r3Ih3xBolfu45cJ2VOHg0XOaegJGJGiPB/w=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+        <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
+            integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU"
+            crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/move-top.js"></script>
         <!-- <script type="text/javascript" src="js/easing.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.2/jquery.easing.min.js"
@@ -361,6 +341,10 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript">
             jQuery(document).ready(function ($) {
+
+
+                smoothScroll.defaults({duration: 7000}); 
+
                 $(".scroll").click(function (event) {
                     event.preventDefault();
                     $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
